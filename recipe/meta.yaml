@@ -27,6 +27,7 @@ requirements:
     - black
     - ipykernel
     - ipython
+    - ipywidgets
     - nest-asyncio
     - pyccolo ==0.0.45
     - traitlets
