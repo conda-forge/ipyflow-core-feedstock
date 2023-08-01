@@ -28,8 +28,9 @@ requirements:
     - ipykernel
     - ipython
     - ipywidgets
+    - jupyter_client
     - nest-asyncio
-    - pyccolo ==0.0.45
+    - pyccolo ==0.0.48
     - traitlets
 
 test:
