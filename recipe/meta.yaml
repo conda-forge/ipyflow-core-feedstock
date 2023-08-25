@@ -1,5 +1,5 @@
 {% set name = "ipyflow-core" %}
-{% set version = "0.0.184" %}
+{% set version = "0.0.185" %}
 
 
 package:
@@ -8,7 +8,8 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ipyflow-core-{{ version }}.tar.gz
-  sha256: 0a4ecd9de0ee4bd88bb05e8f40b9955d4ae8bdaf27251247cf0392b79d78cab3
+  sha256: 426c7a85df06c1e4953e0b9f8c9733315d30fa8d6177811c7c54062cd6bc9b7a
+
 
 build:
   noarch: python
