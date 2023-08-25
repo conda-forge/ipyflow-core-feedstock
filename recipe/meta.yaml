@@ -10,7 +10,6 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ipyflow-core-{{ version }}.tar.gz
   sha256: 0a4ecd9de0ee4bd88bb05e8f40b9955d4ae8bdaf27251247cf0392b79d78cab3
 
-
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
