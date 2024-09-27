@@ -32,21 +32,16 @@ requirements:
     - ipywidgets
     - jupyter_client
     - nest-asyncio
-    - pyccolo ==0.0.54
+    - pyccolo ==0.0.65
     - traitlets
 
 test:
-  # Disable test suite for now SDIST missing utils.py
-  # source_files:
-  #   - test
   imports:
     - ipyflow
   commands:
     - pip check
-    # - pytest -vvv --capture=tee-sys test
   requires:
     - pip
-    # - pytest
 
 about:
   home: https://github.com/ipyflow/ipyflow
