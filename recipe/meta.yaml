@@ -1,5 +1,5 @@
 {% set name = "ipyflow-core" %}
-{% set version = "0.0.200" %}
+{% set version = "0.0.201" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ipyflow-core-{{ version }}.tar.gz
-  sha256: 21994fd623dad270175609ed2c50a192d2875fafa5656d930ea9fc9e434b4c62
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 602258b2dc6f672e7bcfcd155db883a0494f3e305775186a434de8b167377e5b
 
 
 build:
@@ -32,21 +32,16 @@ requirements:
     - ipywidgets
     - jupyter_client
     - nest-asyncio
-    - pyccolo ==0.0.54
+    - pyccolo ==0.0.65
     - traitlets
 
 test:
-  # Disable test suite for now SDIST missing utils.py
-  # source_files:
-  #   - test
   imports:
     - ipyflow
   commands:
     - pip check
-    # - pytest -vvv --capture=tee-sys test
   requires:
     - pip
-    # - pytest
 
 about:
   home: https://github.com/ipyflow/ipyflow
