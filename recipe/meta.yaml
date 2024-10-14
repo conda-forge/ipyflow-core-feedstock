@@ -34,6 +34,7 @@ requirements:
     - nest-asyncio
     - pyccolo ==0.0.67
     - traitlets
+    - wheel >=0.30.0
 
 test:
   imports:
