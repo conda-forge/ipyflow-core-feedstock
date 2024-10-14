@@ -32,7 +32,7 @@ requirements:
     - ipywidgets
     - jupyter_client
     - nest-asyncio
-    - pyccolo ==0.0.66
+    - pyccolo ==0.0.67
     - traitlets
 
 test:
