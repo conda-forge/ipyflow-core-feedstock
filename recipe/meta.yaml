@@ -1,5 +1,5 @@
 {% set name = "ipyflow-core" %}
-{% set version = "0.0.202" %}
+{% set version = "0.0.203" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 461ce836f5c6edad7019708832d5948f465bdcaeb1314e4b1e7921f217d56c5a
+  sha256: 271108a4c30f4647e33a236f75e6ef6ff06b11cd9917c7894cb4aa30fce6bcf0
 
 
 build:
@@ -32,8 +32,9 @@ requirements:
     - ipywidgets
     - jupyter_client
     - nest-asyncio
-    - pyccolo ==0.0.66
+    - pyccolo ==0.0.67
     - traitlets
+    - wheel >=0.30.0
 
 test:
   imports:
