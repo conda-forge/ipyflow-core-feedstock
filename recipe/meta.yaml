@@ -18,13 +18,13 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools >=48
     - wheel >=0.30.0
     - setuptools-git-versioning
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - astunparse
     - black
     - ipykernel
@@ -32,7 +32,7 @@ requirements:
     - ipywidgets
     - jupyter_client
     - nest-asyncio
-    - pyccolo ==0.0.67
+    - pyccolo ==0.0.68
     - traitlets
     - wheel >=0.30.0
 
@@ -43,6 +43,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/ipyflow/ipyflow
