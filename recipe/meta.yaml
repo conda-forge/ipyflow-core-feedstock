@@ -26,13 +26,13 @@ requirements:
   run:
     - python >={{ python_min }}
     - astunparse
-    - black
+    - black <24.0
     - ipykernel
     - ipython
     - ipywidgets
     - jupyter_client
     - nest-asyncio
-    - pyccolo ==0.0.68
+    - pyccolo ==0.0.69
     - traitlets
     - wheel >=0.30.0
 
