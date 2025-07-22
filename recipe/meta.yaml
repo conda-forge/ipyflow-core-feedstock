@@ -30,11 +30,9 @@ requirements:
     - ipykernel
     - ipython
     - ipywidgets
-    - jupyter_client
     - nest-asyncio
-    - pyccolo ==0.0.71
+    - pyccolo ==0.0.72
     - traitlets
-    - wheel >=0.30.0
 
 test:
   imports:
