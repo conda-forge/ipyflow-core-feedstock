@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: ipyflow-core
-  version: 0.0.210
+  version: "0.0.211"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: bc08846ee54229be5d2a4cf45b809e9a31f57731a1301327628aa2791311cb82
+  sha256: 817387889ae9348dbbd7d2d979d4988a120a4e62b37043633b38c6212c3ca6d7
 
 build:
   number: 0
