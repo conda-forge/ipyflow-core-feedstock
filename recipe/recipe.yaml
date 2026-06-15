@@ -2,15 +2,15 @@ schema_version: 1
 
 context:
   name: ipyflow-core
-  version: "0.0.228"
+  version: "0.0.229"
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/2e/8a/cb57d1233f4f24cccfeb319808be493160ff7a10c2ab1791b5a630bc0450/ipyflow_core-${{ version }}.tar.gz
-  sha256: 3d046ed47374e7fed7638fa56402d2d25a5376b306cccd0e36e8f05d19ccc44e
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
+  sha256: f1a474177db628ca6c8bee59df644be842351dc1dab1997216ced349d64f3183
 
 build:
   number: 0
@@ -32,7 +32,7 @@ requirements:
     - ipython
     - ipywidgets
     - nest-asyncio
-    - pyccolo ==0.0.85
+    - pyccolo ==0.0.86
     - traitlets
 
 tests:
