@@ -32,7 +32,7 @@ requirements:
     - ipython
     - ipywidgets
     - nest-asyncio
-    - pyccolo ==0.0.83
+    - pyccolo ==0.0.85
     - traitlets
 
 tests:
@@ -40,7 +40,9 @@ tests:
       imports:
         - ipyflow
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: "Backend package for ipyflow's dataflow functionality"
